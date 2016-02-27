@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A302D50694BC09783BF159CA /* Pods_TimeCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79E24F1AC51005A063D95F4 /* Pods_TimeCard.framework */; };
+		B63BDA2B1C81472800B5A575 /* Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2A1C81472800B5A575 /* Companies.swift */; };
+		B63BDA2D1C817F0400B5A575 /* CompanyMenber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */; };
+		B63BDA2F1C81837200B5A575 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2E1C81837200B5A575 /* TimeData.swift */; };
 		B65A2DFD1C7C98750026E9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A2DFC1C7C98750026E9F1 /* AppDelegate.swift */; };
 		B65A2DFF1C7C98750026E9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A2DFE1C7C98750026E9F1 /* ViewController.swift */; };
 		B65A2E021C7C98750026E9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65A2E001C7C98750026E9F1 /* Main.storyboard */; };
@@ -14,6 +18,10 @@
 		B65A2E071C7C98750026E9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65A2E051C7C98750026E9F1 /* LaunchScreen.storyboard */; };
 		B65A2E121C7C98750026E9F1 /* TimeCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A2E111C7C98750026E9F1 /* TimeCardTests.swift */; };
 		B65A2E1D1C7C98750026E9F1 /* TimeCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A2E1C1C7C98750026E9F1 /* TimeCardUITests.swift */; };
+		B69613191C7F0ECE00C271F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613161C7F0ECE00C271F0 /* Default-568h@2x.png */; };
+		B696131A1C7F0ECE00C271F0 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613171C7F0ECE00C271F0 /* Default-667h@2x.png */; };
+		B696131B1C7F0ECE00C271F0 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613181C7F0ECE00C271F0 /* Default-736h@3x.png */; };
+		B696131D1C7F163400C271F0 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B696131C1C7F163400C271F0 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72114E3C033E04201637A63B /* Pods-TimeCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeCard/Pods-TimeCard.debug.xcconfig"; sourceTree = "<group>"; };
+		8D56B922EAB6CF089B79C8EE /* Pods-TimeCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeCard/Pods-TimeCard.release.xcconfig"; sourceTree = "<group>"; };
+		B63BDA2A1C81472800B5A575 /* Companies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Companies.swift; sourceTree = "<group>"; };
+		B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyMenber.swift; sourceTree = "<group>"; };
+		B63BDA2E1C81837200B5A575 /* TimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
 		B65A2DF91C7C98750026E9F1 /* TimeCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65A2DFC1C7C98750026E9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65A2DFE1C7C98750026E9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,11 @@
 		B65A2E181C7C98750026E9F1 /* TimeCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65A2E1C1C7C98750026E9F1 /* TimeCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardUITests.swift; sourceTree = "<group>"; };
 		B65A2E1E1C7C98750026E9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69613161C7F0ECE00C271F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B69613171C7F0ECE00C271F0 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		B69613181C7F0ECE00C271F0 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		B696131C1C7F163400C271F0 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		E79E24F1AC51005A063D95F4 /* Pods_TimeCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A302D50694BC09783BF159CA /* Pods_TimeCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A01ECA3A365EEE933F68F72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72114E3C033E04201637A63B /* Pods-TimeCard.debug.xcconfig */,
+				8D56B922EAB6CF089B79C8EE /* Pods-TimeCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		555F557DEE985E2632B0E93C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79E24F1AC51005A063D95F4 /* Pods_TimeCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B65A2DF01C7C98750026E9F1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				B65A2E101C7C98750026E9F1 /* TimeCardTests */,
 				B65A2E1B1C7C98750026E9F1 /* TimeCardUITests */,
 				B65A2DFA1C7C98750026E9F1 /* Products */,
+				4A01ECA3A365EEE933F68F72 /* Pods */,
+				555F557DEE985E2632B0E93C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +136,16 @@
 			isa = PBXGroup;
 			children = (
 				B65A2DFC1C7C98750026E9F1 /* AppDelegate.swift */,
+				B69613151C7F0ECE00C271F0 /* Defaults-master */,
 				B65A2DFE1C7C98750026E9F1 /* ViewController.swift */,
 				B65A2E001C7C98750026E9F1 /* Main.storyboard */,
 				B65A2E031C7C98750026E9F1 /* Assets.xcassets */,
 				B65A2E051C7C98750026E9F1 /* LaunchScreen.storyboard */,
 				B65A2E081C7C98750026E9F1 /* Info.plist */,
+				B63BDA2E1C81837200B5A575 /* TimeData.swift */,
+				B63BDA2A1C81472800B5A575 /* Companies.swift */,
+				B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */,
+				B696131C1C7F163400C271F0 /* Users.swift */,
 			);
 			path = TimeCard;
 			sourceTree = "<group>";
@@ -125,6 +168,16 @@
 			path = TimeCardUITests;
 			sourceTree = "<group>";
 		};
+		B69613151C7F0ECE00C271F0 /* Defaults-master */ = {
+			isa = PBXGroup;
+			children = (
+				B69613161C7F0ECE00C271F0 /* Default-568h@2x.png */,
+				B69613171C7F0ECE00C271F0 /* Default-667h@2x.png */,
+				B69613181C7F0ECE00C271F0 /* Default-736h@3x.png */,
+			);
+			path = "Defaults-master";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B65A2E211C7C98750026E9F1 /* Build configuration list for PBXNativeTarget "TimeCard" */;
 			buildPhases = (
+				3B11EE82A47FCFDD5FEF2A68 /* Check Pods Manifest.lock */,
 				B65A2DF51C7C98750026E9F1 /* Sources */,
 				B65A2DF61C7C98750026E9F1 /* Frameworks */,
 				B65A2DF71C7C98750026E9F1 /* Resources */,
+				F5E1BF76A8FAF515B6509DFC /* Embed Pods Frameworks */,
+				FF926D5463A0930381D44F52 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65A2E071C7C98750026E9F1 /* LaunchScreen.storyboard in Resources */,
+				B69613191C7F0ECE00C271F0 /* Default-568h@2x.png in Resources */,
 				B65A2E041C7C98750026E9F1 /* Assets.xcassets in Resources */,
 				B65A2E021C7C98750026E9F1 /* Main.storyboard in Resources */,
+				B696131A1C7F0ECE00C271F0 /* Default-667h@2x.png in Resources */,
+				B696131B1C7F0ECE00C271F0 /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +310,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B11EE82A47FCFDD5FEF2A68 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E1BF76A8FAF515B6509DFC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeCard/Pods-TimeCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF926D5463A0930381D44F52 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeCard/Pods-TimeCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B65A2DF51C7C98750026E9F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B65A2DFF1C7C98750026E9F1 /* ViewController.swift in Sources */,
+				B696131D1C7F163400C271F0 /* Users.swift in Sources */,
 				B65A2DFD1C7C98750026E9F1 /* AppDelegate.swift in Sources */,
+				B63BDA2D1C817F0400B5A575 /* CompanyMenber.swift in Sources */,
+				B63BDA2F1C81837200B5A575 /* TimeData.swift in Sources */,
+				B63BDA2B1C81472800B5A575 /* Companies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +506,7 @@
 		};
 		B65A2E221C7C98750026E9F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72114E3C033E04201637A63B /* Pods-TimeCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TimeCard/Info.plist;
@@ -406,6 +518,7 @@
 		};
 		B65A2E231C7C98750026E9F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D56B922EAB6CF089B79C8EE /* Pods-TimeCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TimeCard/Info.plist;
@@ -482,6 +595,7 @@
 				B65A2E231C7C98750026E9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B65A2E241C7C98750026E9F1 /* Build configuration list for PBXNativeTarget "TimeCardTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +604,7 @@
 				B65A2E261C7C98750026E9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B65A2E271C7C98750026E9F1 /* Build configuration list for PBXNativeTarget "TimeCardUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +613,7 @@
 				B65A2E291C7C98750026E9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
