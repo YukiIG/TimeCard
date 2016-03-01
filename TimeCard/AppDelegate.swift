@@ -14,6 +14,11 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
         var window: UIWindow?
     
+    // View間受け渡し変数
+    var userName: String?
+    var userId: String?
+    var password: String?
+    
     
 
 

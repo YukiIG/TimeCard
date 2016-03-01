@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A302D50694BC09783BF159CA /* Pods_TimeCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79E24F1AC51005A063D95F4 /* Pods_TimeCard.framework */; };
+		B61F4A621C81901C00E23A28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4A611C81901C00E23A28 /* LoginViewController.swift */; };
+		B61F4AAE1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */; };
+		B61F4AAF1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */; };
+		B61F4AB01C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */; };
 		B63BDA2B1C81472800B5A575 /* Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2A1C81472800B5A575 /* Companies.swift */; };
 		B63BDA2D1C817F0400B5A575 /* CompanyMenber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */; };
 		B63BDA2F1C81837200B5A575 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2E1C81837200B5A575 /* TimeData.swift */; };
@@ -44,6 +48,8 @@
 /* Begin PBXFileReference section */
 		72114E3C033E04201637A63B /* Pods-TimeCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeCard/Pods-TimeCard.debug.xcconfig"; sourceTree = "<group>"; };
 		8D56B922EAB6CF089B79C8EE /* Pods-TimeCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeCard/Pods-TimeCard.release.xcconfig"; sourceTree = "<group>"; };
+		B61F4A611C81901C00E23A28 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfirmViewController.swift; sourceTree = "<group>"; };
 		B63BDA2A1C81472800B5A575 /* Companies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Companies.swift; sourceTree = "<group>"; };
 		B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyMenber.swift; sourceTree = "<group>"; };
 		B63BDA2E1C81837200B5A575 /* TimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
@@ -141,7 +147,9 @@
 				B65A2E001C7C98750026E9F1 /* Main.storyboard */,
 				B65A2E031C7C98750026E9F1 /* Assets.xcassets */,
 				B65A2E051C7C98750026E9F1 /* LaunchScreen.storyboard */,
+				B61F4A611C81901C00E23A28 /* LoginViewController.swift */,
 				B65A2E081C7C98750026E9F1 /* Info.plist */,
+				B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */,
 				B63BDA2E1C81837200B5A575 /* TimeData.swift */,
 				B63BDA2A1C81472800B5A575 /* Companies.swift */,
 				B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */,
@@ -363,7 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61F4A621C81901C00E23A28 /* LoginViewController.swift in Sources */,
 				B65A2DFF1C7C98750026E9F1 /* ViewController.swift in Sources */,
+				B61F4AAE1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
 				B696131D1C7F163400C271F0 /* Users.swift in Sources */,
 				B65A2DFD1C7C98750026E9F1 /* AppDelegate.swift in Sources */,
 				B63BDA2D1C817F0400B5A575 /* CompanyMenber.swift in Sources */,
@@ -376,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61F4AAF1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
 				B65A2E121C7C98750026E9F1 /* TimeCardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61F4AB01C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
 				B65A2E1D1C7C98750026E9F1 /* TimeCardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

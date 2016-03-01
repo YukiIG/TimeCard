@@ -72,7 +72,7 @@
                                 <animations/>
                                 <state key="normal" title="新規登録"/>
                                 <connections>
-                                    <segue destination="6X3-bF-yk1" kind="push" id="7xa-f6-Qw4"/>
+                                    <segue destination="6X3-bF-yk1" kind="modal" id="7xa-f6-Qw4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -280,10 +280,10 @@
             </objects>
             <point key="canvasLocation" x="706" y="359"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="i4l-ws-9WU">
             <objects>
-                <viewController id="6X3-bF-yk1" sceneMemberID="viewController">
+                <viewController id="6X3-bF-yk1" customClass="LoginViewController" customModule="TimeCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NAU-6N-g16"/>
                         <viewControllerLayoutGuide type="bottom" id="qiv-Tn-A6c"/>
@@ -345,21 +345,30 @@
                                 <state key="normal" title="確認">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendData" destination="6X3-bF-yk1" eventType="touchUpInside" id="8TL-wX-1yh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ucu-xa-Qju"/>
+                    <connections>
+                        <outlet property="emailForm" destination="xXb-ES-xgZ" id="Bai-WJ-UXz"/>
+                        <outlet property="nameForm" destination="ejj-VP-7Yy" id="Xjy-cW-OWv"/>
+                        <outlet property="passForm" destination="f2X-zK-kav" id="SWp-bI-yVx"/>
+                        <segue destination="UKg-So-5by" kind="modal" identifier="goConfirmPage" id="eTE-uH-jdP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwG-vM-wnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="1440"/>
+            <point key="canvasLocation" x="196" y="1440"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Confirm View Controller-->
         <scene sceneID="acR-f3-j3b">
             <objects>
-                <viewController id="UKg-So-5by" sceneMemberID="viewController">
+                <viewController id="UKg-So-5by" customClass="LoginConfirmViewController" customModule="TimeCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7eT-q4-xQB"/>
                         <viewControllerLayoutGuide type="bottom" id="c9o-3A-dyx"/>
@@ -426,14 +435,29 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27n-sf-14K">
+                                <rect key="frame" x="122" y="518" width="76" height="30"/>
+                                <animations/>
+                                <state key="normal" title="変更"/>
+                                <connections>
+                                    <segue destination="6X3-bF-yk1" kind="modal" id="vUj-go-lLr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tq6-FM-sHl"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="Qo6-ne-AlD" id="3P8-n7-TBC"/>
+                        <outlet property="nameLabel" destination="Hde-m0-3wq" id="6Us-95-gLi"/>
+                        <outlet property="passLabel" destination="ALP-vD-e0T" id="RYQ-v8-xHX"/>
+                        <segue destination="I7J-3Y-1T1" kind="modal" identifier="goCompletePage" id="F4F-mz-ISU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVf-bj-uW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="1440"/>
+            <point key="canvasLocation" x="689" y="1440"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CNe-QE-nJt">
@@ -467,10 +491,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0mX-wz-pBM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyl-PH-c18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="1440"/>
+            <point key="canvasLocation" x="1154" y="1440"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vUj-go-lLr"/>
+    </inferredMetricsTieBreakers>
 </document>
