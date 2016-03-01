@@ -12,6 +12,18 @@
 		B61F4AAE1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */; };
 		B61F4AAF1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */; };
 		B61F4AB01C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */; };
+		B61F4AB21C85A65E00E23A28 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB11C85A65E00E23A28 /* CompleteViewController.swift */; };
+		B61F4AB31C85A65E00E23A28 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB11C85A65E00E23A28 /* CompleteViewController.swift */; };
+		B61F4AB41C85A65E00E23A28 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB11C85A65E00E23A28 /* CompleteViewController.swift */; };
+		B61F4AB61C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB51C85B25E00E23A28 /* CompanyLoginViewController.swift */; };
+		B61F4AB71C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB51C85B25E00E23A28 /* CompanyLoginViewController.swift */; };
+		B61F4AB81C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB51C85B25E00E23A28 /* CompanyLoginViewController.swift */; };
+		B61F4ABA1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB91C85B27400E23A28 /* CompanyConfirmViewController.swift */; };
+		B61F4ABB1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB91C85B27400E23A28 /* CompanyConfirmViewController.swift */; };
+		B61F4ABC1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4AB91C85B27400E23A28 /* CompanyConfirmViewController.swift */; };
+		B61F4ABE1C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4ABD1C85B29200E23A28 /* CompanyCompleteViewController.swift */; };
+		B61F4ABF1C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4ABD1C85B29200E23A28 /* CompanyCompleteViewController.swift */; };
+		B61F4AC01C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61F4ABD1C85B29200E23A28 /* CompanyCompleteViewController.swift */; };
 		B63BDA2B1C81472800B5A575 /* Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2A1C81472800B5A575 /* Companies.swift */; };
 		B63BDA2D1C817F0400B5A575 /* CompanyMenber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */; };
 		B63BDA2F1C81837200B5A575 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BDA2E1C81837200B5A575 /* TimeData.swift */; };
@@ -50,6 +62,10 @@
 		8D56B922EAB6CF089B79C8EE /* Pods-TimeCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeCard/Pods-TimeCard.release.xcconfig"; sourceTree = "<group>"; };
 		B61F4A611C81901C00E23A28 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfirmViewController.swift; sourceTree = "<group>"; };
+		B61F4AB11C85A65E00E23A28 /* CompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
+		B61F4AB51C85B25E00E23A28 /* CompanyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyLoginViewController.swift; sourceTree = "<group>"; };
+		B61F4AB91C85B27400E23A28 /* CompanyConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyConfirmViewController.swift; sourceTree = "<group>"; };
+		B61F4ABD1C85B29200E23A28 /* CompanyCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCompleteViewController.swift; sourceTree = "<group>"; };
 		B63BDA2A1C81472800B5A575 /* Companies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Companies.swift; sourceTree = "<group>"; };
 		B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyMenber.swift; sourceTree = "<group>"; };
 		B63BDA2E1C81837200B5A575 /* TimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
@@ -148,8 +164,12 @@
 				B65A2E031C7C98750026E9F1 /* Assets.xcassets */,
 				B65A2E051C7C98750026E9F1 /* LaunchScreen.storyboard */,
 				B61F4A611C81901C00E23A28 /* LoginViewController.swift */,
-				B65A2E081C7C98750026E9F1 /* Info.plist */,
 				B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */,
+				B61F4AB11C85A65E00E23A28 /* CompleteViewController.swift */,
+				B65A2E081C7C98750026E9F1 /* Info.plist */,
+				B61F4AB51C85B25E00E23A28 /* CompanyLoginViewController.swift */,
+				B61F4AB91C85B27400E23A28 /* CompanyConfirmViewController.swift */,
+				B61F4ABD1C85B29200E23A28 /* CompanyCompleteViewController.swift */,
 				B63BDA2E1C81837200B5A575 /* TimeData.swift */,
 				B63BDA2A1C81472800B5A575 /* Companies.swift */,
 				B63BDA2C1C817F0400B5A575 /* CompanyMenber.swift */,
@@ -375,8 +395,12 @@
 				B65A2DFF1C7C98750026E9F1 /* ViewController.swift in Sources */,
 				B61F4AAE1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
 				B696131D1C7F163400C271F0 /* Users.swift in Sources */,
+				B61F4AB61C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */,
 				B65A2DFD1C7C98750026E9F1 /* AppDelegate.swift in Sources */,
+				B61F4AB21C85A65E00E23A28 /* CompleteViewController.swift in Sources */,
+				B61F4ABA1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */,
 				B63BDA2D1C817F0400B5A575 /* CompanyMenber.swift in Sources */,
+				B61F4ABE1C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */,
 				B63BDA2F1C81837200B5A575 /* TimeData.swift in Sources */,
 				B63BDA2B1C81472800B5A575 /* Companies.swift in Sources */,
 			);
@@ -386,8 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61F4ABB1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */,
+				B61F4AB71C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */,
 				B61F4AAF1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
+				B61F4ABF1C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */,
 				B65A2E121C7C98750026E9F1 /* TimeCardTests.swift in Sources */,
+				B61F4AB31C85A65E00E23A28 /* CompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61F4ABC1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */,
+				B61F4AB81C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */,
 				B61F4AB01C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
+				B61F4AC01C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */,
 				B65A2E1D1C7C98750026E9F1 /* TimeCardUITests.swift in Sources */,
+				B61F4AB41C85A65E00E23A28 /* CompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

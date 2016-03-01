@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var userName: String?
     var userId: String?
     var password: String?
-    
+    var companyName: String?
+    var companyId: String?
+    var hourlyWage: String?
     
 
 

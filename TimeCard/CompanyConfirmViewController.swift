@@ -1,5 +1,5 @@
 //
-//  LoginConfirmViewController.swift
+//  CompanyConfirmViewController.swift
 //  TimeCard
 //
 //  Created by yuki ishiguro on 2016/03/01.
@@ -9,29 +9,34 @@
 import UIKit
 import Parse
 
-class LoginConfirmViewController: UIViewController {
+class CompanyConfirmViewController: UIViewController {
     var name: String?
     var email: String?
     var password: String?
+    var wage: String! 
+    var hourlyWage: Int?
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     @IBOutlet var passLabel: UILabel!
-    
+    @IBOutlet var wageLabel: UILabel!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        name = appDelegate.userName
-        email = appDelegate.userId
+        name = appDelegate.companyName
+        email = appDelegate.companyId
         password = appDelegate.password
-       
+        wage = appDelegate.hourlyWage
+        hourlyWage = Int(wage)!
+        
         nameLabel.text = name
         emailLabel.text = email
         passLabel.text = password
+        wageLabel.text = wage
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,28 +45,31 @@ class LoginConfirmViewController: UIViewController {
     }
     
     // Parseにデータを挿入
-    func create(userName: String!, userId: String!, pass: String!){
-        let userData: PFObject = PFObject(className: "Users")
-        userData.setObject(userName, forKey: "userName")
-        userData.setObject(userId, forKey: "userId")
+    func create(companyName: String!, companyId: String!, pass: String!, wage: Int!){
+        let userData: PFObject = PFObject(className: "Companies")
+        userData.setObject(companyName, forKey: "companyName")
+        userData.setObject(companyId, forKey: "companyId")
         userData.setObject(pass, forKey: "password")
+        userData.setObject(wage, forKey: "hourlyWage")
         userData.saveInBackground()
     }
     
     // 端末にログイン情報保存
-    func setData(userId: String!, pass: String!){
+    func setData(companyId: String!, pass: String!){
         let ud = NSUserDefaults.standardUserDefaults()
-        ud.setObject(userId, forKey: "userId")
+        ud.setObject(companyId, forKey: "companyId")
         ud.setObject(pass, forKey: "password")
         ud.synchronize()
     }
     
     // 送信ボタン
     @IBAction func send(){
-        create(name, userId: email, pass: password)
+        create(name, companyId: email, pass: password, wage: hourlyWage)
         setData(email, pass:password)
-        performSegueWithIdentifier("goCompletePage", sender: nil)
+        performSegueWithIdentifier("goCompanyComplete", sender: nil)
     }
+    
+    
 
     /*
     // MARK: - Navigation
