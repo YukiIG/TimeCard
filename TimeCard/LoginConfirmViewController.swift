@@ -39,6 +39,20 @@ class LoginConfirmViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Parseにデータを挿入
+    func create(userName: String!, userId: String!, pass: String!){
+        let userData: PFObject = PFObject(className: "Users")
+        userData.setObject(userName, forKey: "userName")
+        userData.setObject(userId, forKey: "userId")
+        userData.setObject(pass, forKey: "password")
+        userData.saveInBackground()
+    }
+    
+    // 送信ボタン
+    @IBAction func send(){
+        create(name, userId: email, pass: password)
+        performSegueWithIdentifier("goCompletePage", sender: nil)
+    }
 
     /*
     // MARK: - Navigation
