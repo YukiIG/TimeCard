@@ -34,6 +34,9 @@
 		B65A2E071C7C98750026E9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65A2E051C7C98750026E9F1 /* LaunchScreen.storyboard */; };
 		B65A2E121C7C98750026E9F1 /* TimeCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A2E111C7C98750026E9F1 /* TimeCardTests.swift */; };
 		B65A2E1D1C7C98750026E9F1 /* TimeCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A2E1C1C7C98750026E9F1 /* TimeCardUITests.swift */; };
+		B677E4DA1C86EB520038A84D /* TimeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4D91C86EB520038A84D /* TimeCardViewController.swift */; };
+		B677E4DB1C86EB520038A84D /* TimeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4D91C86EB520038A84D /* TimeCardViewController.swift */; };
+		B677E4DC1C86EB520038A84D /* TimeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4D91C86EB520038A84D /* TimeCardViewController.swift */; };
 		B69613191C7F0ECE00C271F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613161C7F0ECE00C271F0 /* Default-568h@2x.png */; };
 		B696131A1C7F0ECE00C271F0 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613171C7F0ECE00C271F0 /* Default-667h@2x.png */; };
 		B696131B1C7F0ECE00C271F0 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613181C7F0ECE00C271F0 /* Default-736h@3x.png */; };
@@ -82,6 +85,7 @@
 		B65A2E181C7C98750026E9F1 /* TimeCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65A2E1C1C7C98750026E9F1 /* TimeCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardUITests.swift; sourceTree = "<group>"; };
 		B65A2E1E1C7C98750026E9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B677E4D91C86EB520038A84D /* TimeCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCardViewController.swift; sourceTree = "<group>"; };
 		B69613161C7F0ECE00C271F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B69613171C7F0ECE00C271F0 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		B69613181C7F0ECE00C271F0 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				B65A2E001C7C98750026E9F1 /* Main.storyboard */,
 				B65A2E031C7C98750026E9F1 /* Assets.xcassets */,
 				B65A2E051C7C98750026E9F1 /* LaunchScreen.storyboard */,
+				B677E4D91C86EB520038A84D /* TimeCardViewController.swift */,
 				B61F4A611C81901C00E23A28 /* LoginViewController.swift */,
 				B61F4AAD1C8576DE00E23A28 /* LoginConfirmViewController.swift */,
 				B61F4AB11C85A65E00E23A28 /* CompleteViewController.swift */,
@@ -402,6 +407,7 @@
 				B63BDA2D1C817F0400B5A575 /* CompanyMenber.swift in Sources */,
 				B61F4ABE1C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */,
 				B63BDA2F1C81837200B5A575 /* TimeData.swift in Sources */,
+				B677E4DA1C86EB520038A84D /* TimeCardViewController.swift in Sources */,
 				B63BDA2B1C81472800B5A575 /* Companies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +421,7 @@
 				B61F4AAF1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
 				B61F4ABF1C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */,
 				B65A2E121C7C98750026E9F1 /* TimeCardTests.swift in Sources */,
+				B677E4DB1C86EB520038A84D /* TimeCardViewController.swift in Sources */,
 				B61F4AB31C85A65E00E23A28 /* CompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +435,7 @@
 				B61F4AB01C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
 				B61F4AC01C85B29200E23A28 /* CompanyCompleteViewController.swift in Sources */,
 				B65A2E1D1C7C98750026E9F1 /* TimeCardUITests.swift in Sources */,
+				B677E4DC1C86EB520038A84D /* TimeCardViewController.swift in Sources */,
 				B61F4AB41C85A65E00E23A28 /* CompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

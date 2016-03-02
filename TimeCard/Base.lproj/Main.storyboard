@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0uE-Tm-85b" kind="push" id="7mn-Ss-stf"/>
+                                    <action selector="Login" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ge6-Tf-4uq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe9-Fe-NGK">
@@ -57,7 +57,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9vr-zX-1Lk" kind="modal" id="4OO-Wf-Shv"/>
+                                    <action selector="companyLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="oun-Cw-LGK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3F-fa-D8B">
@@ -82,6 +82,12 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="idForm" destination="BI8-e8-DEy" id="4gz-Bp-SJE"/>
+                        <outlet property="passForm" destination="bKA-B2-q47" id="Qge-Ja-4As"/>
+                        <segue destination="9vr-zX-1Lk" kind="modal" identifier="toCompanyPage" id="9W7-rB-cfZ"/>
+                        <segue destination="0uE-Tm-85b" kind="modal" identifier="toMyPage" id="VGC-Oj-gL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,7 +165,7 @@
         <!--タイムカード-->
         <scene sceneID="JGZ-zS-NDX">
             <objects>
-                <viewController id="gxw-co-jUt" sceneMemberID="viewController">
+                <viewController id="gxw-co-jUt" customClass="TimeCardViewController" customModule="TimeCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yqR-ff-uXf"/>
                         <viewControllerLayoutGuide type="bottom" id="FQZ-iO-olb"/>
@@ -203,6 +209,9 @@
                                 <state key="normal" title="出社">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startTime" destination="gxw-co-jUt" eventType="touchUpInside" id="Qs2-4V-Uxa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-QI-I4u">
                                 <rect key="frame" x="171" y="268" width="118" height="80"/>
@@ -212,16 +221,105 @@
                                 <state key="normal" title="退社">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="endTime" destination="gxw-co-jUt" eventType="touchUpInside" id="BkJ-uB-08R"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="タイムカード" id="0xR-8n-kGn"/>
+                    <connections>
+                        <outlet property="userId" destination="pro-RU-gOl" id="LQw-Zo-rhz"/>
+                        <segue destination="I3W-KV-Crz" kind="modal" identifier="goStartPage" id="Xtv-2e-xtB"/>
+                        <segue destination="Mxv-j5-LZ0" kind="modal" identifier="doEndPage" id="dZh-o3-ArG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGH-ET-yoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1390" y="-1033"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JfM-En-Dt2">
+            <objects>
+                <viewController id="Mxv-j5-LZ0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llq-q5-zBP"/>
+                        <viewControllerLayoutGuide type="bottom" id="oRQ-YS-3lu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Pn-Bn-86a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="退社" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRD-gl-5er">
+                                <rect key="frame" x="98" y="87" width="125" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5g-2c-PUe">
+                                <rect key="frame" x="35" y="324" width="265" height="51"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.53922739109999995" blue="0.22229448509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="お疲れ様です！">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gxw-co-jUt" kind="modal" id="9eh-QW-Cvs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0OY-MR-2rk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850" y="-1040"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wvf-i2-fGQ">
+            <objects>
+                <viewController id="I3W-KV-Crz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6DG-F1-QvJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="LaL-5S-BY8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gjo-AA-Z7z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="出社" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGv-rv-AtL">
+                                <rect key="frame" x="83" y="72" width="153" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qr-XQ-ySg">
+                                <rect key="frame" x="52" y="315" width="222" height="62"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1043700457" green="0.5440379434" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="頑張って下さい！">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gxw-co-jUt" kind="modal" id="vgy-Tt-dIa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Tz-A8-UB9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeN-qL-6zN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-1785"/>
         </scene>
         <!--メンバー-->
         <scene sceneID="rTQ-fh-wUL">
@@ -783,13 +881,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRK-Oa-X07" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="-964"/>
+            <point key="canvasLocation" x="419" y="-491"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vUj-go-lLr"/>
-        <segue reference="vOf-d7-HLW"/>
-        <segue reference="Jn1-Uy-kWp"/>
-        <segue reference="ji1-ba-49r"/>
+        <segue reference="7xa-f6-Qw4"/>
+        <segue reference="9W7-rB-cfZ"/>
+        <segue reference="cBd-rK-22G"/>
+        <segue reference="VGC-Oj-gL2"/>
+        <segue reference="9eh-QW-Cvs"/>
     </inferredMetricsTieBreakers>
 </document>
