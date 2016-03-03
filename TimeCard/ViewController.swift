@@ -45,7 +45,9 @@ class ViewController: UIViewController {
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
                 
-                if objects != nil {
+                print(objects)
+                for object in objects! {
+                if object["userName"] != nil {
                 ud.setObject(userId, forKey: "userId")
                 ud.setObject(password, forKey: "password")
                 ud.synchronize()
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
                     
                     self.presentViewController(alertController, animated: true, completion: nil)
                     
+                }
                 }
             } else {
                 let alertController = UIAlertController(title: "エラー", message: "ユーザーIDかパスワードが違います", preferredStyle: .Alert)
@@ -81,35 +84,33 @@ class ViewController: UIViewController {
         query.whereKey("password", equalTo: password)
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
-                if let dataObjects: [PFObject] = objects {
-                for dataObject in dataObjects {
-                    if password == dataObject["password"] as! String {
+                print(objects)
+                for object in objects! {
+                    if object["companyName"] != nil {
                         ud.setObject(companyId, forKey: "companyId")
                         ud.setObject(password, forKey: "password")
                         ud.synchronize()
                         self.performSegueWithIdentifier("toCompanyPage", sender: nil)
                     } else {
-                        let alertController = UIAlertController(title: "エラー", message: "ユーザーIDかパスワードが違います", preferredStyle: .Alert)
+                        let alertController = UIAlertController(title: "エラー", message: "カンパニーIDかパスワードが違います", preferredStyle: .Alert)
                         
                         let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
                         alertController.addAction(defaultAction)
                         
                         self.presentViewController(alertController, animated: true, completion: nil)
-
+                        
                     }
                 }
-                }
-                
             } else {
-                let alertController = UIAlertController(title: "エラー", message: "ユーザーIDかパスワードが違います", preferredStyle: .Alert)
+                let alertController = UIAlertController(title: "エラー", message: "カンパニーIDかパスワードが違います", preferredStyle: .Alert)
                 
                 let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
                 alertController.addAction(defaultAction)
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
             }
-        }
         
+    }
     }
     
 }
