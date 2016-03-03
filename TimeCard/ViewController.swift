@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var idForm: UITextField!
     @IBOutlet var passForm: UITextField!
     
@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.idForm.delegate = self
+        self.passForm.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
         let ud = NSUserDefaults.standardUserDefaults()
 
@@ -27,12 +31,16 @@ class ViewController: UIViewController {
             performSegueWithIdentifier("toCompanyPage", sender: nil)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
+
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+
     
     @IBAction func Login(){
         let userId: String! = idForm.text

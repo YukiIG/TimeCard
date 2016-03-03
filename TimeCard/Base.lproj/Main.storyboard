@@ -356,10 +356,33 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="XHc-aQ-sOy" kind="push" id="Uax-jr-WMa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZP-cz-4CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1702" y="41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8ww-PG-ORv">
+            <objects>
+                <viewController id="XHc-aQ-sOy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ezs-RJ-SvC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pqh-Tp-2pR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f3H-lQ-wrW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h2p-mF-p2g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Gg-Ae-KsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245" y="261"/>
         </scene>
         <!--メンバー登録-->
         <scene sceneID="IrD-Ny-xGC">
@@ -422,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjj-UQ-mb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2193" y="41"/>
+            <point key="canvasLocation" x="2245" y="-481"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TIR-iA-FFu">
