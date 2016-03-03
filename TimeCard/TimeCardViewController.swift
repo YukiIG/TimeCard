@@ -25,34 +25,38 @@ class TimeCardViewController: UIViewController {
     }
 
     //Paese データ挿入
-    func create(companyId: String!, userId: String!, key: String!){
+    func create(companyId: String!, userId: String!){
         let userData: PFObject = PFObject(className: "TimeData")
         userData.setObject(companyId, forKey: "companyId")
         userData.setObject(userId, forKey: "userId")
-        userData.setObject(1, forKey: key)
+        userData.setObject(1, forKey: "start")
+        userData.setObject(0, forKey: "end")
         userData.saveInBackground()
     }
 
-    //Parse データ挿入
-  /*  func read(userId: String) {
+    //Parse データ更新
+    func update(companyId:String!, userId: String!){
         let query = PFQuery(className: "TimeData")
-        query.orderByDescending("createdAt")
         query.whereKey("userId", equalTo: userId)
-        query.whereKey("end", equalTo: nil)
+        query.whereKey("companyId", equalTo: companyId)
+        query.whereKey("end", equalTo: 0)
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
-                if let dataObject = objects as? [PFObject]? {
-                    for object in objects! {
-                        let dataObject = object as! String
-                        return dataObject["objectId"]
+                for object in objects!{
+                    object["end"] = 1
+                    object.saveInBackgroundWithBlock{ (success, error) -> Void in
+                        if success {
+                            print("OK")
+                        } else {
+                            print("Error")
+                        }
                     }
                 }
             } else {
-                alert("エラー", messageWord: "エラーが発生しました")
+                print(error)
             }
-        }
     }
-*/    
+    }
 
     //アラート
     func alert(titleWord: String, messageWord: String){
@@ -73,7 +77,7 @@ class TimeCardViewController: UIViewController {
         
         if user != "" {
             
-            create(companyId, userId: user, key: "start")
+            create(companyId, userId: user)
 //            alert("出社", messageWord: "頑張って下さい！")
             performSegueWithIdentifier("goStartPage", sender: nil)
         } else {
@@ -89,7 +93,7 @@ class TimeCardViewController: UIViewController {
         
         
         if user != "" {
-            create(companyId, userId: user, key: "end")
+            update(companyId, userId: user)
 //            alert("退社", messageWord: "お疲れ様でした！")
             performSegueWithIdentifier("goEndPage", sender: nil)
         } else {

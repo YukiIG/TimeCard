@@ -233,7 +233,7 @@
                     <connections>
                         <outlet property="userId" destination="pro-RU-gOl" id="LQw-Zo-rhz"/>
                         <segue destination="I3W-KV-Crz" kind="modal" identifier="goStartPage" id="Xtv-2e-xtB"/>
-                        <segue destination="Mxv-j5-LZ0" kind="modal" identifier="doEndPage" id="dZh-o3-ArG"/>
+                        <segue destination="Mxv-j5-LZ0" kind="modal" identifier="goEndPage" id="dZh-o3-ArG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGH-ET-yoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -268,7 +268,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gxw-co-jUt" kind="modal" id="9eh-QW-Cvs"/>
+                                    <segue destination="gxw-co-jUt" kind="modal" id="HHe-1l-c7d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0OY-MR-2rk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1850" y="-1040"/>
+            <point key="canvasLocation" x="1843" y="-686"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Wvf-i2-fGQ">
@@ -324,14 +324,14 @@
         <!--給料管理（メンバー一覧）-->
         <scene sceneID="2ud-NR-BTU">
             <objects>
-                <tableViewController id="EUf-w6-sKS" sceneMemberID="viewController">
+                <tableViewController id="EUf-w6-sKS" customClass="MemberTableViewController" customModule="TimeCard" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iAT-Gp-Cct">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="SNe-1W-nNV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="SNe-1W-nNV" customClass="nameTableViewCell" customModule="TimeCard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SNe-1W-nNV" id="fKu-KY-G07">
@@ -364,7 +364,7 @@
         <!--メンバー登録-->
         <scene sceneID="IrD-Ny-xGC">
             <objects>
-                <viewController id="2qq-gg-E6K" sceneMemberID="viewController">
+                <viewController id="2qq-gg-E6K" customClass="addMemberViewController" customModule="TimeCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m6o-0I-UCV"/>
                         <viewControllerLayoutGuide type="bottom" id="cou-Kc-8Bq"/>
@@ -404,9 +404,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="メンバー登録" id="PsR-Fq-Ast">
-                        <barButtonItem key="leftBarButtonItem" title="戻る" id="zKk-it-OIU"/>
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="pua-6B-iO1"/>
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="zKk-it-OIU">
+                            <connections>
+                                <action selector="back" destination="2qq-gg-E6K" id="MsP-zz-Hbu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="追加" id="pua-6B-iO1">
+                            <connections>
+                                <action selector="add" destination="2qq-gg-E6K" id="YpV-YY-bfG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="passForm" destination="V3Q-C6-e4s" id="AQg-wR-SRm"/>
+                        <outlet property="userForm" destination="Y4g-9R-RLl" id="2Gh-uL-Itt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjj-UQ-mb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -430,7 +442,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ar3-Nr-Omv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="105"/>
+            <point key="canvasLocation" x="822" y="-567"/>
         </scene>
         <!--Company Login View Controller-->
         <scene sceneID="1Re-W3-THU">
@@ -960,6 +972,6 @@
         <segue reference="9W7-rB-cfZ"/>
         <segue reference="cBd-rK-22G"/>
         <segue reference="VGC-Oj-gL2"/>
-        <segue reference="o5G-np-SEG"/>
+        <segue reference="HHe-1l-c7d"/>
     </inferredMetricsTieBreakers>
 </document>
