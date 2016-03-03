@@ -24,6 +24,7 @@ class TimeCardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //Paese データ挿入
     func create(companyId: String!, userId: String!, key: String!){
         let userData: PFObject = PFObject(className: "TimeData")
         userData.setObject(companyId, forKey: "companyId")
@@ -32,6 +33,28 @@ class TimeCardViewController: UIViewController {
         userData.saveInBackground()
     }
 
+    //Parse データ挿入
+  /*  func read(userId: String) {
+        let query = PFQuery(className: "TimeData")
+        query.orderByDescending("createdAt")
+        query.whereKey("userId", equalTo: userId)
+        query.whereKey("end", equalTo: nil)
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if error == nil {
+                if let dataObject = objects as? [PFObject]? {
+                    for object in objects! {
+                        let dataObject = object as! String
+                        return dataObject["objectId"]
+                    }
+                }
+            } else {
+                alert("エラー", messageWord: "エラーが発生しました")
+            }
+        }
+    }
+*/    
+
+    //アラート
     func alert(titleWord: String, messageWord: String){
         let alertController = UIAlertController(title: titleWord, message: messageWord, preferredStyle: .Alert)
         
@@ -41,6 +64,7 @@ class TimeCardViewController: UIViewController {
         presentViewController(alertController, animated: true, completion: nil)
     }
     
+    //入社ボタン
     @IBAction func startTime(){
         let user = userId.text
         let defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
@@ -57,6 +81,7 @@ class TimeCardViewController: UIViewController {
         }
     }
 
+    //退社ボタン
     @IBAction func endTime(){
         let user = userId.text
         let defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()

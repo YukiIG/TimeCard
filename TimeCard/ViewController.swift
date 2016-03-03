@@ -44,10 +44,21 @@ class ViewController: UIViewController {
         query.whereKey("password", equalTo: password)
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
+                
+                if objects != nil {
                 ud.setObject(userId, forKey: "userId")
                 ud.setObject(password, forKey: "password")
                 ud.synchronize()
                 self.performSegueWithIdentifier("toMyPage", sender: nil)
+                } else {
+                    let alertController = UIAlertController(title: "エラー", message: "ユーザーIDかパスワードが違います", preferredStyle: .Alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                }
             } else {
                 let alertController = UIAlertController(title: "エラー", message: "ユーザーIDかパスワードが違います", preferredStyle: .Alert)
                 

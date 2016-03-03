@@ -321,50 +321,102 @@
             </objects>
             <point key="canvasLocation" x="1820" y="-1785"/>
         </scene>
-        <!--メンバー-->
-        <scene sceneID="rTQ-fh-wUL">
+        <!--給料管理（メンバー一覧）-->
+        <scene sceneID="2ud-NR-BTU">
             <objects>
-                <viewController id="yaF-Tx-NiZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="80x-YG-q7k"/>
-                        <viewControllerLayoutGuide type="bottom" id="5s8-Od-jjI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IIU-xW-PkV">
+                <tableViewController id="EUf-w6-sKS" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iAT-Gp-Cct">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="メンバー" id="HCK-VC-2dM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YyP-bu-wOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="SNe-1W-nNV">
+                                <rect key="frame" x="0.0" y="92" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SNe-1W-nNV" id="fKu-KY-G07">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EUf-w6-sKS" id="MKW-Am-76l"/>
+                            <outlet property="delegate" destination="EUf-w6-sKS" id="Apa-Mo-9s6"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="給料管理（メンバー一覧）" id="7kA-tc-8Fe">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="dUu-CS-xIf">
+                            <connections>
+                                <segue destination="2qq-gg-E6K" kind="push" id="DQA-pg-zhu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZP-cz-4CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="259"/>
+            <point key="canvasLocation" x="1702" y="41"/>
         </scene>
-        <!--給料管理-->
-        <scene sceneID="WpQ-Ui-1ia">
+        <!--メンバー登録-->
+        <scene sceneID="IrD-Ny-xGC">
             <objects>
-                <viewController id="8B6-eF-7rg" sceneMemberID="viewController">
+                <viewController id="2qq-gg-E6K" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NWJ-KJ-8Vm"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tgz-Ij-owR"/>
+                        <viewControllerLayoutGuide type="top" id="m6o-0I-UCV"/>
+                        <viewControllerLayoutGuide type="bottom" id="cou-Kc-8Bq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rSX-kn-x9B">
+                    <view key="view" contentMode="scaleToFill" id="2Yr-rE-0r2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4g-9R-RLl">
+                                <rect key="frame" x="140" y="222" width="160" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V3Q-C6-e4s">
+                                <rect key="frame" x="140" y="301" width="160" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ユーザーID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1M-z8-qWH">
+                                <rect key="frame" x="28" y="226" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="パスワード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mol-3i-T6P">
+                                <rect key="frame" x="28" y="304" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="給料管理" id="B3M-ho-arF"/>
+                    <navigationItem key="navigationItem" title="メンバー登録" id="PsR-Fq-Ast">
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="zKk-it-OIU"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="pua-6B-iO1"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rdr-UH-WnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjj-UQ-mb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="-397"/>
+            <point key="canvasLocation" x="2193" y="41"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TIR-iA-FFu">
             <objects>
                 <tabBarController id="9vr-zX-1Lk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Mwd-la-h4n"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7BL-NN-yyW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -373,8 +425,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="gxw-co-jUt" kind="relationship" relationship="viewControllers" id="o5G-np-SEG"/>
-                        <segue destination="8B6-eF-7rg" kind="relationship" relationship="viewControllers" id="Y7t-3v-wRR"/>
-                        <segue destination="yaF-Tx-NiZ" kind="relationship" relationship="viewControllers" id="OI3-h4-Qxh"/>
+                        <segue destination="fmV-Nb-6PY" kind="relationship" relationship="viewControllers" id="T6x-zJ-KKt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ar3-Nr-Omv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -883,12 +934,32 @@
             </objects>
             <point key="canvasLocation" x="419" y="-491"/>
         </scene>
+        <!--給料管理-->
+        <scene sceneID="B9x-hD-zPn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fmV-Nb-6PY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="給料管理" id="Qpa-2W-0QA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OY0-Z7-gbo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EUf-w6-sKS" kind="relationship" relationship="rootViewController" id="G90-Zm-a9Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNY-Oa-e73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="41"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7xa-f6-Qw4"/>
         <segue reference="9W7-rB-cfZ"/>
         <segue reference="cBd-rK-22G"/>
         <segue reference="VGC-Oj-gL2"/>
-        <segue reference="9eh-QW-Cvs"/>
+        <segue reference="o5G-np-SEG"/>
     </inferredMetricsTieBreakers>
 </document>
