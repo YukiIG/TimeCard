@@ -357,17 +357,17 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="XHc-aQ-sOy" kind="push" id="Uax-jr-WMa"/>
+                        <segue destination="XHc-aQ-sOy" kind="push" identifier="goDetail" id="G7a-gW-Yxb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZP-cz-4CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1702" y="41"/>
         </scene>
-        <!--View Controller-->
+        <!--給料一覧-->
         <scene sceneID="8ww-PG-ORv">
             <objects>
-                <viewController id="XHc-aQ-sOy" sceneMemberID="viewController">
+                <viewController id="XHc-aQ-sOy" customClass="DetailViewController" customModule="TimeCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ezs-RJ-SvC"/>
                         <viewControllerLayoutGuide type="bottom" id="Pqh-Tp-2pR"/>
@@ -378,7 +378,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h2p-mF-p2g"/>
+                    <navigationItem key="navigationItem" title="給料一覧" id="h2p-mF-p2g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gg-Ae-KsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

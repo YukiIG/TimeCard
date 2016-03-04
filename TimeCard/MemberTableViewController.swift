@@ -11,6 +11,8 @@ import Parse
 
 class MemberTableViewController: UITableViewController {
     var nameList: [AnyObject] = []
+    var idList: [AnyObject] = []
+    var sendId: String!
     let defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +64,13 @@ class MemberTableViewController: UITableViewController {
 //            }
 //            self.tableView.reloadData()
 //        }
-        
+       
         
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
         let query = PFQuery(className: "CompanyMember")
         query.cachePolicy = PFCachePolicy.NetworkElseCache
         query.whereKey("companyId", equalTo: defaults.stringForKey("companyId")!)
@@ -86,6 +90,7 @@ class MemberTableViewController: UITableViewController {
                             for userObject in userObjects!{
                                 print("userName = \(userObject["userName"])")
                                 self.nameList.append(userObject["userName"])
+                                self.idList.append(userObject["userId"])
                                 print(self.nameList)
                             }
                         } else {
@@ -100,7 +105,6 @@ class MemberTableViewController: UITableViewController {
             }
            
         }
-        super.viewWillAppear(animated)
     }
     
     override func didReceiveMemoryWarning() {
@@ -128,7 +132,19 @@ class MemberTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+        sendId = idList[indexPath.row] as! String
+        performSegueWithIdentifier("goDetail", sender: nil)
+    }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "goDetail") {
+            let detailController: DetailViewController = (segue.destinationViewController as? DetailViewController)!
+            
+            detailController.userId = sendId
+            
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

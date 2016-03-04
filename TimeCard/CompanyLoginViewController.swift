@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CompanyLoginViewController: UIViewController {
+class CompanyLoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var nameForm: UITextField!
     @IBOutlet var emailForm: UITextField!
     @IBOutlet var passForm: UITextField!
@@ -18,6 +18,11 @@ class CompanyLoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.nameForm.delegate = self
+        self.emailForm.delegate = self
+        self.passForm.delegate = self
+        self.wageForm.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {

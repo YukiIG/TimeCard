@@ -49,6 +49,9 @@
 		B677E4EA1C8834C80038A84D /* addMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4E91C8834C80038A84D /* addMemberViewController.swift */; };
 		B677E4EB1C8834C80038A84D /* addMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4E91C8834C80038A84D /* addMemberViewController.swift */; };
 		B677E4EC1C8834C80038A84D /* addMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4E91C8834C80038A84D /* addMemberViewController.swift */; };
+		B677E4EE1C892D220038A84D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4ED1C892D220038A84D /* DetailViewController.swift */; };
+		B677E4EF1C892D220038A84D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4ED1C892D220038A84D /* DetailViewController.swift */; };
+		B677E4F01C892D220038A84D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677E4ED1C892D220038A84D /* DetailViewController.swift */; };
 		B69613191C7F0ECE00C271F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613161C7F0ECE00C271F0 /* Default-568h@2x.png */; };
 		B696131A1C7F0ECE00C271F0 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613171C7F0ECE00C271F0 /* Default-667h@2x.png */; };
 		B696131B1C7F0ECE00C271F0 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69613181C7F0ECE00C271F0 /* Default-736h@3x.png */; };
@@ -102,6 +105,7 @@
 		B677E4E11C882D1E0038A84D /* nameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nameTableViewCell.swift; sourceTree = "<group>"; };
 		B677E4E21C882D1E0038A84D /* nameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameTableViewCell.xib; sourceTree = "<group>"; };
 		B677E4E91C8834C80038A84D /* addMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addMemberViewController.swift; sourceTree = "<group>"; };
+		B677E4ED1C892D220038A84D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B69613161C7F0ECE00C271F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B69613171C7F0ECE00C271F0 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		B69613181C7F0ECE00C271F0 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				B65A2E051C7C98750026E9F1 /* LaunchScreen.storyboard */,
 				B677E4D91C86EB520038A84D /* TimeCardViewController.swift */,
 				B677E4E91C8834C80038A84D /* addMemberViewController.swift */,
+				B677E4ED1C892D220038A84D /* DetailViewController.swift */,
 				B677E4E11C882D1E0038A84D /* nameTableViewCell.swift */,
 				B677E4E21C882D1E0038A84D /* nameTableViewCell.xib */,
 				B61F4A611C81901C00E23A28 /* LoginViewController.swift */,
@@ -421,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B61F4A621C81901C00E23A28 /* LoginViewController.swift in Sources */,
+				B677E4EE1C892D220038A84D /* DetailViewController.swift in Sources */,
 				B65A2DFF1C7C98750026E9F1 /* ViewController.swift in Sources */,
 				B677E4E31C882D1E0038A84D /* nameTableViewCell.swift in Sources */,
 				B61F4AAE1C8576DE00E23A28 /* LoginConfirmViewController.swift in Sources */,
@@ -443,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B677E4EF1C892D220038A84D /* DetailViewController.swift in Sources */,
 				B61F4ABB1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */,
 				B677E4DF1C882C930038A84D /* MemberTableViewController.swift in Sources */,
 				B61F4AB71C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */,
@@ -460,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B677E4F01C892D220038A84D /* DetailViewController.swift in Sources */,
 				B61F4ABC1C85B27400E23A28 /* CompanyConfirmViewController.swift in Sources */,
 				B677E4E01C882C930038A84D /* MemberTableViewController.swift in Sources */,
 				B61F4AB81C85B25E00E23A28 /* CompanyLoginViewController.swift in Sources */,
@@ -597,7 +605,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TimeCard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuki.TimeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,7 +621,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TimeCard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuki.TimeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
