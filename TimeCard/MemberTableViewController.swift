@@ -70,7 +70,8 @@ class MemberTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
+        nameList = []
+        idList = []
         let query = PFQuery(className: "CompanyMember")
         query.cachePolicy = PFCachePolicy.NetworkElseCache
         query.whereKey("companyId", equalTo: defaults.stringForKey("companyId")!)
