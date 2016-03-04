@@ -93,13 +93,15 @@ class MemberTableViewController: UITableViewController {
                                 self.idList.append(userObject["userId"])
                                 print(self.nameList)
                             }
+                            print("check3")
+                            self.tableView.reloadData()
+
                         } else {
                             
                         }
                     }
                     
                 }
-                 self.tableView.reloadData()
             } else {
                 print(error)
             }

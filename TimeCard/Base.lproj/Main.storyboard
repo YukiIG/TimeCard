@@ -86,81 +86,12 @@
                         <outlet property="idForm" destination="BI8-e8-DEy" id="4gz-Bp-SJE"/>
                         <outlet property="passForm" destination="bKA-B2-q47" id="Qge-Ja-4As"/>
                         <segue destination="9vr-zX-1Lk" kind="modal" identifier="toCompanyPage" id="9W7-rB-cfZ"/>
-                        <segue destination="0uE-Tm-85b" kind="modal" identifier="toMyPage" id="VGC-Oj-gL2"/>
+                        <segue destination="oga-fl-hZ4" kind="modal" identifier="toMyPage" id="RCW-Cc-iaj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="334"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="6LN-Z4-FYE">
-            <objects>
-                <viewController id="hfo-XR-IPy" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZEx-k7-fMA"/>
-                        <viewControllerLayoutGuide type="bottom" id="0g0-TD-7Sh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lo6-oH-QO1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="38" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KRi-8G-JUd">
-                                <rect key="frame" x="0.0" y="109" width="320" height="459"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="38" id="ugA-Y6-DOU">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="38"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ugA-Y6-DOU" id="FJa-zk-6T8">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="会社名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awE-fW-N7Q">
-                                                    <rect key="frame" x="21" y="0.0" width="71" height="29"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="勤務時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7k-b3-nrh">
-                                                    <rect key="frame" x="124" y="0.0" width="80" height="29"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="給料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiO-X5-0DO">
-                                                    <rect key="frame" x="237" y="4" width="56" height="25"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="給料一覧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-FR-qYz">
-                                <rect key="frame" x="76" y="35" width="169" height="31"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="G7A-wU-Gb2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wxs-oX-Euh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="908" y="-1576"/>
         </scene>
         <!--タイムカード-->
         <scene sceneID="JGZ-zS-NDX">
@@ -238,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGH-ET-yoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1390" y="-1033"/>
+            <point key="canvasLocation" x="1518" y="-1205"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JfM-En-Dt2">
@@ -415,9 +346,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back" destination="XHc-aQ-sOy" eventType="touchUpInside" id="Axo-Ok-qHY"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="hourLabel" destination="HDL-P1-Ul2" id="pg4-Me-zQD"/>
+                        <outlet property="wageLabel" destination="KwS-8q-4YF" id="LRa-ST-I8T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gg-Ae-KsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -486,6 +424,51 @@
             </objects>
             <point key="canvasLocation" x="2245" y="-481"/>
         </scene>
+        <!--Personal View Controller-->
+        <scene sceneID="ywe-Pb-ajh">
+            <objects>
+                <viewController id="oga-fl-hZ4" customClass="personalViewController" customModule="TimeCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w7h-bx-qkP"/>
+                        <viewControllerLayoutGuide type="bottom" id="33E-RL-VaD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X9P-K0-nCu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5r-6A-nWa">
+                                <rect key="frame" x="29" y="214" width="211" height="139"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6c-B9-QtG">
+                                <rect key="frame" x="248" y="288" width="46" height="55"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今月の給料は..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JO-aG-mLh">
+                                <rect key="frame" x="58" y="77" width="204" height="55"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="wageLabel" destination="g5r-6A-nWa" id="6fv-I8-ExZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HD7-0C-QPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="-319"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TIR-iA-FFu">
             <objects>
@@ -504,7 +487,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ar3-Nr-Omv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="-567"/>
+            <point key="canvasLocation" x="1207" y="-635"/>
         </scene>
         <!--Company Login View Controller-->
         <scene sceneID="1Re-W3-THU">
@@ -981,32 +964,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="0mX-wz-pBM"/>
                     <connections>
-                        <segue destination="0uE-Tm-85b" kind="modal" identifier="goMyPage" id="vOf-d7-HLW"/>
+                        <segue destination="oga-fl-hZ4" kind="modal" identifier="goMyPage" id="Nxn-sv-0Kr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyl-PH-c18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1718" y="940"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="W3h-fC-YZN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0uE-Tm-85b" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="mz8-We-2jF"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L8U-rx-ccE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="hfo-XR-IPy" kind="relationship" relationship="rootViewController" id="1aB-Mk-mYY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nRK-Oa-X07" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="419" y="-491"/>
         </scene>
         <!--給料管理-->
         <scene sceneID="B9x-hD-zPn">
@@ -1031,9 +994,9 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7xa-f6-Qw4"/>
+        <segue reference="RCW-Cc-iaj"/>
         <segue reference="9W7-rB-cfZ"/>
         <segue reference="cBd-rK-22G"/>
-        <segue reference="VGC-Oj-gL2"/>
-        <segue reference="HHe-1l-c7d"/>
+        <segue reference="o5G-np-SEG"/>
     </inferredMetricsTieBreakers>
 </document>

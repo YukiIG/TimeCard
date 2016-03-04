@@ -15,13 +15,15 @@ class Companies: PFObject, PFSubclassing {
     @NSManaged var companyId: String!
     @NSManaged var companyName: String!
     @NSManaged var password: String!
+    @NSManaged var hourlyWage: Int
     
     
-    init(companyId: String, companyName: String, password: String) {
+    init(companyId: String, companyName: String, password: String, hourlyWage: Int) {
         super.init()
         self.companyId = companyId
         self.companyName = companyName
         self.password = password
+        self.hourlyWage = hourlyWage
     }
     
     override init() {

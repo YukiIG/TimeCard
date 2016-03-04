@@ -25,11 +25,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let ud = NSUserDefaults.standardUserDefaults()
 
         //自動ログイン
-        if ud.stringForKey("userId") != nil {
-            performSegueWithIdentifier("toMyPage", sender: nil)
-        } else if ud.objectForKey("companyId") as? String != nil {
-            performSegueWithIdentifier("toCompanyPage", sender: nil)
-        }
+        //テストによりコメントアウト
+//        if ud.stringForKey("userId") != nil {
+//            performSegueWithIdentifier("toMyPage", sender: nil)
+//        } else if ud.objectForKey("companyId") as? String != nil {
+//            performSegueWithIdentifier("toCompanyPage", sender: nil)
+//        }
     }
     
     override func didReceiveMemoryWarning() {
