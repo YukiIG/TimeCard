@@ -26,19 +26,19 @@ class DetailViewController: UIViewController {
         let companyId: String! = defaults.stringForKey("companyId")
         
 
-                let queryWage = PFQuery(className: "Companies")
-                queryWage.whereKey("companyId", equalTo: companyId)
-                queryWage.findObjectsInBackgroundWithBlock { (wageObjects, error) -> Void in
-                    if error == nil {
-                        for wageObject in wageObjects!{
-                            self.wage = wageObject["hourlyWage"] as! Int
-                            print(self.wage)
-                            print("wage end")
-                        }
-                    } else {
-                        print("error")
-                    }
-                }
+//                let queryWage = PFQuery(className: "Companies")
+//                queryWage.whereKey("companyId", equalTo: companyId)
+//                queryWage.findObjectsInBackgroundWithBlock { (wageObjects, error) -> Void in
+//                    if error == nil {
+//                        for wageObject in wageObjects!{
+//                            self.wage = wageObject["hourlyWage"] as! Int
+//                            print(self.wage)
+//                            print("wage end")
+//                        }
+//                    } else {
+//                        print("error")
+//                    }
+//                }
 
         
         
@@ -63,14 +63,32 @@ class DetailViewController: UIViewController {
                         self.workTime += time
                         }
                     }
-                    print(self.workTime)
-                    print("workTime end")
-                    let workHour: Int = self.workTime / 3600
-                    self.hourLabel.text = String(workHour)
-//                    let totalWage: Int = self.wage * workHour
-  //                  self.wageLabel.text = String(totalWage)
-    //                print(totalWage)
-                    print(workHour)
+                    
+                    let queryWage = PFQuery(className: "Companies")
+                    queryWage.whereKey("companyId", equalTo: companyId)
+                    queryWage.findObjectsInBackgroundWithBlock { (wageObjects, error) -> Void in
+                        if error == nil {
+                            for wageObject in wageObjects!{
+                                self.wage = wageObject["hourlyWage"] as! Int
+                                print(self.wage)
+                                print("wage end")
+                                print(self.workTime)
+                                print("workTime end")
+                                let workHour: Int = self.workTime / 3600
+                                self.hourLabel.text = String(workHour)
+                                let totalWage: Int = self.wage * workHour
+                                self.wageLabel.text = String(totalWage)
+                                print(totalWage)
+                                print(workHour)
+
+                            }
+                        } else {
+                            print("error")
+                        }
+                    }
+
+                    
+                    
                 } else {
                         print(error)
                 }
