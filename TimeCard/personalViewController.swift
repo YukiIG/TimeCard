@@ -40,6 +40,14 @@ class personalViewController: UIViewController {
                     print(self.companyId)
                     print("check point")
 
+                    var time = Int(self.endTime.timeIntervalSinceDate(self.startTime))
+                    
+                    //今月の給料
+                    if self.month(self.startTime) == self.month(self.now){
+                        print(time)
+                        print("time end")
+                        self.workTime += time
+                    }
                     
                  
                                         let queryCompany = PFQuery(className: "Companies")
@@ -51,7 +59,16 @@ class personalViewController: UIViewController {
                                                     self.wage = (companyObject["hourlyWage"] as! Int)
                                                     print(self.wage)
                                                     print("self wage")
-                                                }
+                                                    
+                                                    print(self.companyId)
+                                                    print("Id check")
+                                                    
+                                                    print(self.workTime)
+                                                    print("workTime end")
+                                                    let workHour: Int = self.workTime / 3600
+                                                    let totalWage: Int = self.wage * workHour
+                                                    self.wageLabel.text = String(totalWage)
+                                                    }
                                                 
                                             } else {
                     
@@ -61,27 +78,8 @@ class personalViewController: UIViewController {
 
                     
                     
-                    var time = Int(self.endTime.timeIntervalSinceDate(self.startTime))
-                    
-                    //今月の給料
-                    if self.month(self.startTime) == self.month(self.now){
-                        print(time)
-                        print("time end")
-                        self.workTime += time
-                    }
                 }
                 
-                print(self.companyId)
-                print("Id check")
-      //          self.wage = self.hourlyWage(self.companyId)
-                
-                print(self.workTime)
-                print("workTime end")
-                let workHour: Int = self.workTime / 3600
-                let totalWage: Int = self.wage * workHour
-                self.wageLabel.text = String(totalWage)
-                //         print(totalWage)
-                //       print(workHour)
             } else {
                 print(error)
             }
