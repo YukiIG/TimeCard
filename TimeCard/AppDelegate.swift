@@ -26,6 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /* ここから */
+        let storyboard: UIStoryboard = StoryboardHelper.adjust()
+        print(storyboard)
+        window!.rootViewController = storyboard.instantiateInitialViewController()! as UIViewController
+        self.window?.makeKeyAndVisible()
+        /* ここまで */
+        
         Parse.setApplicationId("IXto1U8ylP17a9DDhVECVlRnI9sl7zTgIfMOLlTf",clientKey:"QmykQGFzz6Df5YC5N9ZGXBneLDmrGNvsF0DmhLA5")
         return true
     }
