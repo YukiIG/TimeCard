@@ -62,6 +62,12 @@
 		B6950B311C964D80006A7059 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B6950B2B1C964D80006A7059 /* README.md */; };
 		B6950B321C964D80006A7059 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6950B2C1C964D80006A7059 /* StoryboardHelper.swift */; };
 		B696131D1C7F163400C271F0 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B696131C1C7F163400C271F0 /* Users.swift */; };
+		B6C831861C9FCC90006F800F /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C831801C9FCC90006F800F /* Icon-60@2x.png */; };
+		B6C831871C9FCC90006F800F /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C831811C9FCC90006F800F /* Icon-60@3x.png */; };
+		B6C831881C9FCC90006F800F /* Icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C831821C9FCC90006F800F /* Icon29@2x.png */; };
+		B6C831891C9FCC90006F800F /* Icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C831831C9FCC90006F800F /* Icon29@3x.png */; };
+		B6C8318A1C9FCC90006F800F /* Icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C831841C9FCC90006F800F /* Icon40@2x.png */; };
+		B6C8318B1C9FCC90006F800F /* Icon40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C831851C9FCC90006F800F /* Icon40@3x.png */; };
 		B6D256811C9681D30097F05E /* 3.5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D256801C9681D30097F05E /* 3.5inch.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +127,12 @@
 		B6950B2B1C964D80006A7059 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6950B2C1C964D80006A7059 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
 		B696131C1C7F163400C271F0 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		B6C831801C9FCC90006F800F /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		B6C831811C9FCC90006F800F /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		B6C831821C9FCC90006F800F /* Icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@2x.png"; sourceTree = "<group>"; };
+		B6C831831C9FCC90006F800F /* Icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@3x.png"; sourceTree = "<group>"; };
+		B6C831841C9FCC90006F800F /* Icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon40@2x.png"; sourceTree = "<group>"; };
+		B6C831851C9FCC90006F800F /* Icon40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon40@3x.png"; sourceTree = "<group>"; };
 		B6D256801C9681D30097F05E /* 3.5inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.5inch.storyboard; sourceTree = "<group>"; };
 		E79E24F1AC51005A063D95F4 /* Pods_TimeCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,6 +205,7 @@
 		B65A2DFB1C7C98750026E9F1 /* TimeCard */ = {
 			isa = PBXGroup;
 			children = (
+				B6C8317E1C9FCC90006F800F /* ios */,
 				B65A2DFC1C7C98750026E9F1 /* AppDelegate.swift */,
 				B677E4F81C89AA660038A84D /* Login */,
 				B677E4F61C89AA360038A84D /* Storyboards */,
@@ -293,6 +306,27 @@
 			path = Defaults;
 			sourceTree = "<group>";
 		};
+		B6C8317E1C9FCC90006F800F /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8317F1C9FCC90006F800F /* AppIcon.appiconset */,
+				B6C831801C9FCC90006F800F /* Icon-60@2x.png */,
+				B6C831811C9FCC90006F800F /* Icon-60@3x.png */,
+				B6C831821C9FCC90006F800F /* Icon29@2x.png */,
+				B6C831831C9FCC90006F800F /* Icon29@3x.png */,
+				B6C831841C9FCC90006F800F /* Icon40@2x.png */,
+				B6C831851C9FCC90006F800F /* Icon40@3x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B6C8317F1C9FCC90006F800F /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,7 +398,7 @@
 				TargetAttributes = {
 					B65A2DF81C7C98750026E9F1 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = R7MU3X7XM4;
+						DevelopmentTeam = C37KMR5RE3;
 					};
 					B65A2E0C1C7C98750026E9F1 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -401,15 +435,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C831891C9FCC90006F800F /* Icon29@3x.png in Resources */,
 				B6950B2D1C964D80006A7059 /* .gitignore in Resources */,
+				B6C831861C9FCC90006F800F /* Icon-60@2x.png in Resources */,
 				B65A2E071C7C98750026E9F1 /* LaunchScreen.storyboard in Resources */,
 				B6950B2F1C964D80006A7059 /* Default-667h@2x.png in Resources */,
+				B6C8318B1C9FCC90006F800F /* Icon40@3x.png in Resources */,
 				B6950B301C964D80006A7059 /* Default-736h@3x.png in Resources */,
 				B65A2E041C7C98750026E9F1 /* Assets.xcassets in Resources */,
 				B65A2E021C7C98750026E9F1 /* Main.storyboard in Resources */,
 				B6D256811C9681D30097F05E /* 3.5inch.storyboard in Resources */,
+				B6C8318A1C9FCC90006F800F /* Icon40@2x.png in Resources */,
 				B677E4E61C882D1E0038A84D /* nameTableViewCell.xib in Resources */,
 				B6950B2E1C964D80006A7059 /* Default-568h@2x.png in Resources */,
+				B6C831881C9FCC90006F800F /* Icon29@2x.png in Resources */,
+				B6C831871C9FCC90006F800F /* Icon-60@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +711,7 @@
 				INFOPLIST_FILE = TimeCard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuki.TimeCard;
+				PRODUCT_BUNDLE_IDENTIFIER = TimeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -687,7 +727,7 @@
 				INFOPLIST_FILE = TimeCard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuki.TimeCard;
+				PRODUCT_BUNDLE_IDENTIFIER = TimeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
